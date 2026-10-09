@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 400" fill="none">
+  <!-- Concentric decorative contour lines for orange organic wave -->
+  <path d="M 50 -20 C 70 80, 140 180, 260 230 C 320 255, 380 270, 420 280" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M 85 -20 C 105 75, 175 165, 290 210 C 350 235, 410 248, 450 255" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1.8" stroke-linecap="round" fill="none" />
+  <path d="M 120 -20 C 140 70, 210 150, 320 190 C 380 215, 440 225, 480 230" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" fill="none" />
+  <path d="M 155 -20 C 175 65, 245 135, 350 170 C 410 195, 470 205, 510 210" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.2" stroke-linecap="round" fill="none" />
+  
+  <!-- Subtle circular accent particles -->
+  <circle cx="230" cy="180" r="3" fill="#FFFFFF" fill-opacity="0.4" />
+  <circle cx="280" cy="240" r="2" fill="#FFFFFF" fill-opacity="0.3" />
+  <circle cx="160" cy="110" r="2.5" fill="#FFFFFF" fill-opacity="0.3" />
+</svg>
+

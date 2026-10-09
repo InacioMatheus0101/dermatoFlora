@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 700" preserveAspectRatio="none" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="curve-orange-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7543" />
+      <stop offset="60%" stop-color="#E2541C" />
+      <stop offset="100%" stop-color="#C84410" />
+    </linearGradient>
+    <filter id="orange-shadow" x="-10%" y="0%" width="120%" height="100%">
+      <feDropShadow dx="-4" dy="4" stdDeviation="12" flood-color="#E2541C" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Linha Verde Orgânica de Contorno (Fiel à Referência) -->
+  <path d="M 450 60
+           C 280 100, 160 220, 140 340
+           C 120 450, 180 580, 260 700"
+        stroke="#247833" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-dasharray="600"
+        stroke-dashoffset="0"
+        opacity="0.9"
+        fill="none" />
+
+  <!-- Segunda Linha Sutil Paralela -->
+  <path d="M 450 110
+           C 310 145, 205 255, 190 360
+           C 175 450, 225 570, 310 700"
+        stroke="#247833" 
+        stroke-width="1.5" 
+        stroke-linecap="round" 
+        opacity="0.35"
+        fill="none" />
+
+  <!-- Forma Principal Orgânica Laranja Degradê -->
+  <path d="M 220 0 
+           L 450 0 
+           L 450 560 
+           C 380 480, 270 420, 230 310 
+           C 190 200, 230 80, 220 0 
+           Z" 
+        fill="url(#curve-orange-grad)" 
+        filter="url(#orange-shadow)" />
+</svg>
+

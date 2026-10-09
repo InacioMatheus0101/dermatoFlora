@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGradCromo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCF8F5"/>
+      <stop offset="100%" stop-color="#F7EDE3"/>
+    </radialGradient>
+    <linearGradient id="amberGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C06014"/>
+      <stop offset="40%" stop-color="#8E3C00"/>
+      <stop offset="100%" stop-color="#5B2500"/>
+    </linearGradient>
+    <linearGradient id="cromoSpectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9B59B6"/>
+      <stop offset="25%" stop-color="#3498DB"/>
+      <stop offset="50%" stop-color="#2ECC71"/>
+      <stop offset="75%" stop-color="#F1C40F"/>
+      <stop offset="100%" stop-color="#E2541C"/>
+    </linearGradient>
+    <filter id="cromoShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#E2541C" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Fundo Circular Suave -->
+  <circle cx="200" cy="200" r="185" fill="url(#bgGradCromo)"/>
+
+  <!-- Aura Cromoterápica (Cores de Cura) -->
+  <circle cx="200" cy="180" r="100" fill="none" stroke="url(#cromoSpectrum)" stroke-width="4" opacity="0.35" stroke-dasharray="10, 8"/>
+  <circle cx="200" cy="180" r="120" fill="none" stroke="url(#cromoSpectrum)" stroke-width="2" opacity="0.2" stroke-dasharray="6, 6"/>
+
+  <!-- Sombra de Base -->
+  <ellipse cx="200" cy="340" rx="65" ry="12" fill="#000000" opacity="0.12"/>
+
+  <!-- Frasco Conta-Gotas Âmbar Cromofloral -->
+  <g filter="url(#cromoShadow)">
+    <!-- Corpo do Frasco Cilíndrico -->
+    <rect x="145" y="165" width="110" height="155" rx="20" fill="url(#amberGlass)"/>
+    
+    <!-- Ombros do Frasco -->
+    <path d="M145 180 Q145 150 170 145 L230 145 Q255 150 255 180 Z" fill="url(#amberGlass)"/>
+    
+    <!-- Gargalo -->
+    <rect x="175" y="125" width="50" height="22" rx="3" fill="url(#amberGlass)"/>
+    
+    <!-- Tampa Preta com Bulbo de Borracha -->
+    <rect x="170" y="105" width="60" height="22" rx="4" fill="#222222"/>
+    <path d="M185 105 C185 85, 215 85, 215 105 Z" fill="#111111"/>
+
+    <!-- Pipeta de Vidro e Gota Cromática -->
+    <path d="M200 68 C194 78, 194 85, 200 90 C206 85, 206 78, 200 68 Z" fill="url(#cromoSpectrum)"/>
+
+    <!-- Rótulo Frontal -->
+    <rect x="155" y="180" width="90" height="120" rx="8" fill="#FFFFFF"/>
+    
+    <!-- Detalhe do Rótulo -->
+    <rect x="155" y="186" width="90" height="14" fill="url(#cromoSpectrum)"/>
+    <text x="200" y="196" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#FFFFFF" text-anchor="middle">DERMATOFLORA</text>
+    
+    <text x="200" y="222" font-family="'Poppins', sans-serif" font-size="10.5" font-weight="800" fill="#E2541C" text-anchor="middle">CROMOFLORAIS</text>
+    <text x="200" y="234" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" fill="#247833" text-anchor="middle">Terapia Floral + Luz</text>
+    
+    <!-- Mandala / Símbolo Floral -->
+    <circle cx="200" cy="256" r="14" fill="#FBF8F4" stroke="#E2541C" stroke-width="1"/>
+    <path d="M200 246 Q206 256 200 266 Q194 256 200 246 Z" fill="#247833"/>
+    <path d="M190 256 Q200 262 210 256 Q200 250 190 256 Z" fill="#E2541C"/>
+
+    <text x="200" y="284" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="600" fill="#666666" text-anchor="middle">Gotas Sublinguais 30ml</text>
+
+    <!-- Brilho no Vidro Âmbar -->
+    <path d="M153 175 L153 305" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
+  </g>
+
+  <!-- Tag de Destaque Terapêutico -->
+  <g transform="translate(265, 115)">
+    <rect x="0" y="0" width="70" height="24" rx="12" fill="#247833"/>
+    <text x="35" y="16" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">INTEGRATIVO</text>
+  </g>
+</svg>
+

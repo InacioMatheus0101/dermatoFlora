@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none">
+  <defs>
+    <radialGradient id="pet-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E0F2F1" />
+      <stop offset="100%" stop-color="#E0F2F1" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="jar-lid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2541C" />
+      <stop offset="50%" stop-color="#FF7A45" />
+      <stop offset="100%" stop-color="#E2541C" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="130" r="85" fill="url(#pet-glow)" />
+  <g transform="translate(10, 15)">
+    <!-- Pet Chew Jar / Bottle -->
+    <rect x="65" y="42" width="70" height="18" rx="4" fill="url(#jar-lid)" />
+    <!-- White Jar Body -->
+    <rect x="60" y="60" width="80" height="120" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1.2" />
+    <!-- Paw emblem -->
+    <g transform="translate(85, 78)">
+      <ellipse cx="15" cy="18" rx="8" ry="6" fill="#2E7D32" />
+      <circle cx="6" cy="7" r="3.5" fill="#2E7D32" />
+      <circle cx="13" cy="4" r="3.5" fill="#2E7D32" />
+      <circle cx="21" cy="5" r="3.5" fill="#2E7D32" />
+      <circle cx="26" cy="10" r="3" fill="#2E7D32" />
+    </g>
+    <!-- Label Text -->
+    <text x="100" y="118" font-family="sans-serif" font-size="8" font-weight="bold" fill="#2E7D32" text-anchor="middle">BISCOITO PET</text>
+    <text x="100" y="128" font-family="sans-serif" font-size="6.5" font-weight="bold" fill="#E2541C" text-anchor="middle">CALMANTE & ANTI-STRESS</text>
+    <rect x="74" y="138" width="52" height="1.5" fill="#E0E0E0" />
+    <text x="100" y="149" font-family="sans-serif" font-size="5" fill="#616161" text-anchor="middle">Passiflora + Triptofano</text>
+    <text x="100" y="158" font-family="sans-serif" font-size="5" fill="#757575" text-anchor="middle">Sabor Carne • 30 un</text>
+    <!-- Pet cookies beside jar -->
+    <ellipse cx="150" cy="168" rx="14" ry="9" fill="#BCAAA4" stroke="#8D6E63" stroke-width="1" />
+    <ellipse cx="158" cy="158" rx="12" ry="8" fill="#A1887F" stroke="#6D4C41" stroke-width="1" />
+  </g>
+</svg>
+

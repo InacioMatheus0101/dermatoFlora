@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" fill="none">
+  <!-- Ramo Botânico Decorativo Suave DermatoFlora -->
+  <path d="M100 280 Q95 190 120 130 T130 20" stroke="#247833" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- Folha 1 (Esquerda Inferior) -->
+  <path d="M96 220 C70 215 50 195 55 175 C75 180 92 198 96 220 Z" fill="#247833" opacity="0.35"/>
+  <path d="M96 220 Q75 198 55 175" stroke="#247833" stroke-width="1.2" opacity="0.45"/>
+  
+  <!-- Folha 2 (Direita Inferior) -->
+  <path d="M103 200 C125 190 145 195 150 175 C135 168 112 178 103 200 Z" fill="#247833" opacity="0.35"/>
+  <path d="M103 200 Q127 184 150 175" stroke="#247833" stroke-width="1.2" opacity="0.45"/>
+  
+  <!-- Folha 3 (Esquerda Média) -->
+  <path d="M110 160 C85 150 70 130 80 110 C98 120 108 140 110 160 Z" fill="#247833" opacity="0.35"/>
+  <path d="M110 160 Q95 135 80 110" stroke="#247833" stroke-width="1.2" opacity="0.45"/>
+  
+  <!-- Folha 4 (Direita Média) -->
+  <path d="M118 135 C140 125 158 128 160 105 C142 102 125 115 118 135 Z" fill="#247833" opacity="0.35"/>
+  <path d="M118 135 Q139 120 160 105" stroke="#247833" stroke-width="1.2" opacity="0.45"/>
+  
+  <!-- Folha 5 (Esquerda Superior) -->
+  <path d="M124 95 C105 85 95 65 105 50 C120 60 125 78 124 95 Z" fill="#247833" opacity="0.35"/>
+  <path d="M124 95 Q114 73 105 50" stroke="#247833" stroke-width="1.2" opacity="0.45"/>
+  
+  <!-- Folha 6 (Ápice Terminal) -->
+  <path d="M130 20 C135 5 125 -5 115 5 C115 20 122 25 130 20 Z" fill="#247833" opacity="0.4"/>
+</svg>
+

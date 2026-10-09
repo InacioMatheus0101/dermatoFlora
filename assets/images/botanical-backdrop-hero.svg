@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 500" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Iluminação Difusa Natural (Luz solar suave através da folhagem) -->
+    <radialGradient id="diffuse-sunlight" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF7" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#EAF5EC" stop-opacity="0.65" />
+      <stop offset="70%" stop-color="#D7ECD9" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#C5E2C8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Gradiente Botânico Folhas Sálvia & Floresta -->
+    <linearGradient id="leaf-grad-sage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5CD677" />
+      <stop offset="50%" stop-color="#2D8540" />
+      <stop offset="100%" stop-color="#144D20" />
+    </linearGradient>
+
+    <linearGradient id="leaf-grad-olive" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#72B57B" />
+      <stop offset="60%" stop-color="#3A8A4B" />
+      <stop offset="100%" stop-color="#1E5C2C" />
+    </linearGradient>
+
+    <linearGradient id="leaf-grad-soft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A8DDB0" />
+      <stop offset="100%" stop-color="#4C9C5B" />
+    </linearGradient>
+
+    <!-- Sombras Botânicas Suaves -->
+    <filter id="botanical-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="6" stdDeviation="8" flood-color="#0E3314" flood-opacity="0.16" />
+    </filter>
+
+    <!-- Profundidade de Campo: Desfoque Discreto para Folhas ao Fundo -->
+    <filter id="depth-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" />
+    </filter>
+    <filter id="soft-depth-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.8" />
+    </filter>
+  </defs>
+
+  <!-- Aura Central de Luz Difusa -->
+  <ellipse cx="270" cy="240" rx="250" ry="210" fill="url(#diffuse-sunlight)" />
+
+  <!-- =========================================================================
+       CAMADA 1: FOLHAGENS AO FUNDO COM PROFUNDIDADE DE CAMPO (DESFOQUE DISCRETO)
+       ========================================================================= -->
+  <g filter="url(#depth-blur)" opacity="0.45">
+    <!-- Galho Superior Esquerdo com Folhas Desfocadas -->
+    <path d="M 60 120 C 100 80, 150 70, 200 85" stroke="#2D8540" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 120 95 C 105 55, 140 40, 160 65 C 150 90, 130 95, 120 95 Z" fill="url(#leaf-grad-sage)" />
+    <path d="M 160 80 C 150 40, 190 30, 205 55 C 190 78, 170 82, 160 80 Z" fill="url(#leaf-grad-olive)" />
+    <path d="M 85 110 C 60 85, 80 60, 105 80 C 100 100, 90 110, 85 110 Z" fill="url(#leaf-grad-soft)" />
+
+    <!-- Folhagem Superior Direita ao Fundo -->
+    <path d="M 440 140 C 400 90, 360 85, 320 95" stroke="#3A8A4B" stroke-width="2" stroke-linecap="round" />
+    <path d="M 390 105 C 410 70, 440 85, 430 115 C 410 115, 395 110, 390 105 Z" fill="url(#leaf-grad-sage)" />
+    <path d="M 350 90 C 365 55, 400 65, 390 95 C 370 95, 355 92, 350 90 Z" fill="url(#leaf-grad-olive)" />
+  </g>
+
+  <!-- =========================================================================
+       CAMADA 2: FOLHAGENS MÉDIAS (SEMIDESFOCADAS, TONS DE SÁLVIA & CREME)
+       ========================================================================= -->
+  <g filter="url(#soft-depth-blur)" opacity="0.75">
+    <!-- Ramo Orgânico Esquerdo -->
+    <path d="M 20 280 C 50 220, 85 160, 140 120" stroke="#1E5C2C" stroke-width="3" stroke-linecap="round" />
+    <path d="M 55 230 C 20 215, 30 175, 65 190 C 70 210, 62 225, 55 230 Z" fill="url(#leaf-grad-olive)" />
+    <path d="M 90 180 C 60 155, 75 125, 105 145 C 105 165, 98 178, 90 180 Z" fill="url(#leaf-grad-sage)" />
+    <path d="M 125 135 C 105 100, 135 85, 155 110 C 150 130, 135 135, 125 135 Z" fill="url(#leaf-grad-soft)" />
+
+    <!-- Ramo Orgânico Direito Inferior -->
+    <path d="M 520 340 C 470 300, 430 260, 410 200" stroke="#1E5C2C" stroke-width="2.8" stroke-linecap="round" />
+    <path d="M 475 305 C 505 285, 495 250, 465 270 C 462 290, 470 302, 475 305 Z" fill="url(#leaf-grad-sage)" />
+    <path d="M 440 255 C 470 230, 455 195, 430 220 C 430 240, 435 250, 440 255 Z" fill="url(#leaf-grad-olive)" />
+  </g>
+
+  <!-- =========================================================================
+       CAMADA 3: FOLHAS BOTÂNICAS EM PRIMEIRO PLANO (NÍTIDAS, COM SOMBRA REAL)
+       ========================================================================= -->
+  <g filter="url(#botanical-shadow)" opacity="0.95">
+    <!-- Haste Elegante Superior Esquerda (Bordejando a composição) -->
+    <path d="M 0 180 C 40 140, 75 100, 130 65" stroke="#144D20" stroke-width="3.2" stroke-linecap="round" />
+    
+    <!-- Folha Nítida 1 -->
+    <path d="M 45 145 C 15 130, 20 85, 55 100 C 65 125, 55 140, 45 145 Z" fill="url(#leaf-grad-sage)" stroke="#144D20" stroke-width="1.2" />
+    <path d="M 45 145 Q 35 120 55 100" stroke="#D7ECD9" stroke-width="1" stroke-linecap="round" />
+
+    <!-- Folha Nítida 2 -->
+    <path d="M 85 105 C 65 70, 95 45, 120 70 C 115 95, 95 105, 85 105 Z" fill="url(#leaf-grad-olive)" stroke="#144D20" stroke-width="1.2" />
+    <path d="M 85 105 Q 95 80 120 70" stroke="#D7ECD9" stroke-width="1" stroke-linecap="round" />
+
+    <!-- Folha Ápice Nítida 3 -->
+    <path d="M 130 65 C 120 25, 160 10, 175 40 C 165 65, 142 68, 130 65 Z" fill="url(#leaf-grad-soft)" stroke="#144D20" stroke-width="1.2" />
+    <path d="M 130 65 Q 150 40 175 40" stroke="#D7ECD9" stroke-width="1" stroke-linecap="round" />
+
+    <!-- Haste Elegante Direita (Descendo com harmonia botânica) -->
+    <path d="M 540 220 C 490 200, 450 170, 420 120" stroke="#144D20" stroke-width="3" stroke-linecap="round" />
+    <path d="M 485 195 C 515 170, 500 135, 470 155 C 472 178, 480 190, 485 195 Z" fill="url(#leaf-grad-sage)" stroke="#144D20" stroke-width="1.2" />
+    <path d="M 485 195 Q 492 165 470 155" stroke="#D7ECD9" stroke-width="1" stroke-linecap="round" />
+
+    <path d="M 445 150 C 470 120, 450 85, 425 110 C 430 132, 440 145, 445 150 Z" fill="url(#leaf-grad-olive)" stroke="#144D20" stroke-width="1.2" />
+    <path d="M 445 150 Q 448 120 425 110" stroke="#D7ECD9" stroke-width="1" stroke-linecap="round" />
+  </g>
+</svg>
+

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 78" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Gradientes Oficiais de Alta Definição -->
+    <linearGradient id="logo-green-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E8B38" />
+      <stop offset="100%" stop-color="#1A6126" />
+    </linearGradient>
+    <linearGradient id="logo-orange-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7043" />
+      <stop offset="100%" stop-color="#E2541C" />
+    </linearGradient>
+    <filter id="logo-soft-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <!-- ==================== EMBLEMA OFICIAL (CÍRCULO + CÁPSULA + FOLHAS) ==================== -->
+  <g transform="translate(6, 4)" filter="url(#logo-soft-shadow)">
+    <!-- Metade Superior Verde do Círculo -->
+    <path d="M 35 5 A 32 32 0 0 0 4 37 A 32 32 0 0 0 35 69 L 35 5 Z" fill="url(#logo-green-grad)" transform="rotate(45 35 37)" />
+    <!-- Metade Inferior Laranja do Círculo -->
+    <path d="M 35 5 A 32 32 0 0 1 66 37 A 32 32 0 0 1 35 69 L 35 5 Z" fill="url(#logo-orange-grad)" transform="rotate(45 35 37)" />
+
+    <!-- Cápsula Rotacionada em 40 Graus -->
+    <g transform="rotate(-40 35 37)">
+      <!-- Corpo Base da Cápsula (Branco Puro com Contorno Sutil) -->
+      <rect x="22" y="14" width="26" height="46" rx="13" fill="#FFFFFF" stroke="#FAF7F2" stroke-width="1.2" />
+      
+      <!-- Metade Superior da Cápsula (Verde) -->
+      <path d="M 22 27 C 22 19 27 14 35 14 C 43 14 48 19 48 27 L 48 37 L 22 37 Z" fill="#247833" />
+      
+      <!-- Divisão Sutil da Cápsula -->
+      <line x1="22" y1="37" x2="48" y2="37" stroke="#ECE5DD" stroke-width="1" />
+    </g>
+
+    <!-- Folhas Brotam da Cápsula (Posição Fiel à Logo Oficial) -->
+    <!-- Folha 1 (Esquerda - Branca com Contorno Delicado) -->
+    <path d="M 29 39 C 18 34 16 23 27 19 C 32 26 31 34 29 39 Z" fill="#FFFFFF" stroke="#FAF7F2" stroke-width="1" />
+    <path d="M 29 39 Q 25 30 27 19" stroke="#E5DFD7" stroke-width="1" stroke-linecap="round" fill="none" />
+
+    <!-- Folha 2 (Inferior Esquerda - Pequena Branca) -->
+    <path d="M 28 41 C 18 43 17 52 26 53 C 29 48 29 43 28 41 Z" fill="#FFFFFF" stroke="#FAF7F2" stroke-width="1" />
+
+    <!-- Folha 3 (Direita - Verde Viva com Nervura Central) -->
+    <path d="M 32 37 C 46 31 52 23 45 17 C 37 23 35 32 32 37 Z" fill="#2E7D32" stroke="#FFFFFF" stroke-width="1" />
+    <path d="M 32 37 Q 40 27 45 17" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- ==================== TIPOGRAFIA OFICIAL ==================== -->
+  <!-- "Dermato" em Laranja Oficial -->
+  <text x="86" y="44" font-family="'Poppins', 'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="700" font-size="34" fill="#E2541C" letter-spacing="-0.5">Dermato</text>
+  
+  <!-- "Flora" em Verde Oficial -->
+  <text x="231" y="44" font-family="'Poppins', 'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="700" font-size="34" fill="#247833" letter-spacing="-0.5">Flora</text>
+
+  <!-- Subtítulo Institucional "FARMÁCIA DE MANIPULAÇÃO" -->
+  <text x="88" y="64" font-family="'Poppins', 'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="600" font-size="10.8" fill="#E2541C" letter-spacing="3.2">FARMÁCIA DE MANIPULAÇÃO</text>
+</svg>
+
